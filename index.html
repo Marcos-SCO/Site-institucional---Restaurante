@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <title>Dilma - O melhor restaurante da região</title>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0"> 
+    <meta name=description content="Dilma Restaurante & Lanchonete - O melhor restaurante da região">
+    <meta name=author content='Jeniffer, Luis, Marcos, Ruan'>
+    <meta name=application-name content="NetBeans IDE 8.1"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--icone-->
+    <link rel="stylesheet" href="css/reset.css"><!--reset-->
+    <link href="css/style.css" rel="stylesheet"><!--style-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!--font-awesome-->
+    <link href="css/lightbox.min.css" rel="stylesheet"><!--css-lightbx-->
+    <script src="js/lightbox-plus-jquery.min.js"></script><!--Script-lightbox-->
+    <script src="js/script.js"></script><!--Script-padrão-->
+</head>
+<body>
+  <header>
+    <div id="fundo">
+        <a href="index.html"><img src="img/logo.png" alt="Dilma Restaurante" title="Dilma Restaurante & Lanchonete"></a>
+        <h1>
+            O melhor restaurante<br>
+            <span class="M">localizado na grande São Paulo.</span>
+        </h1>  
+    </div> 
+    <div class="hamburguerM">
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><span class="hum">&#9776;</span></label>        
+      <nav class="menu">   
+             <ul>
+                 <li><a href="javascript:navegacao(1);"><span class="pan">Home</span></a></li>
+                 <li><a href="javascript:navegacao(2);"><span class="pan">Pratos</span></a></li> 
+                 <li><a href="javascript:navegacao(3);"><span class="pan">Sobre</span></a></li>
+                 <li><a href="javascript:navegacao(4);"><span class="pan">Galeria</span></a></li>
+                 <li><a href="javascript:navegacao(5);"><span class="pan">Contato</span></a></li>
+             </ul>
+       </nav>
+    </div> 
+  </header>
+           
+  <div id="container">
+    <main>
+    <!--Start main-->
+     <div id="menu1">
+       <figure class="gos">
+         <picture>
+             <!--TESTE DE PICTURE QUERY-->
+             <source srcset="img/spaghetti480.png" media="(max-width:480px)" width="100%">
+             <source srcset="img/spaghetti768.png" media="(max-width:1023.99px)" width="100%">
+             <source srcset="img/spaghetti1024.png" media="(max-width:1024px)" width="100%">
+             <!-- FALLBACK -->
+             <img src="img/spaghetti1366.png" width="100%" alt="Plano de fundo Spaghetti">
+         </picture>
+         <figcaption class="com">
+                <div>
+                    <h4>Restaurante & Lanchonete</h4>
+                    <h1>O melhor da região!</h1>
+                    <p>Localizado no município de Santana de Parnaíba, funcionamos de Segunda a Sábado das 9Hs ás 17Hs. A melhor opção para quem está com fome, servimos almoço, lanches e entregamos marmitex.
+                    </p>
+                 </div>
+         </figcaption>
+       </figure>
+       <h4 class="semana">Cardápio da semana</h4>
+         <div class="cardapios">
+              <div class="cardCaixa">     
+                  <div class="cardapio">
+                      <h3>Segunda-feira</h3>
+                      <ul class="itens">
+                          <li>Picadinho</li>
+                          <li>Virada Paulista</li>
+                          <li>Filé de Frango Grelhado</li>	
+                      </ul>
+                  </div>
+                  <div class="cardapio">
+                      <h3>Terça-feira</h3>
+                      <ul class="itens">
+                          <li>Bife de Panela</li>
+                          <li>Costela Suina</li>
+                          <li>File de Frango a Milanesa</li>	
+                      </ul>
+                  </div>
+                  <div class="cardapio">
+                      <h3>Quarta-feira</h3>
+                      <ul class="itens">
+                          <li>Bife Acebolado</li>
+                          <li>Feijoada P</li>
+                          <li>Feijoada G</li>	
+                          <li>Strogonoff de Frango</li>	
+                      </ul>
+                  </div>
+                  <div class="cardapio">
+                      <h3>Quinta-feira</h3>
+                      <ul class="itens">
+                          <li>Bife Acebolado</li>
+                          <li>Frango Assado</li>
+                          <li>Lasanha à Bolonhesa</li>	
+                      </ul>
+                  </div>
+                  <div class="cardapio">
+                      <h3>Sexta-feira</h3>
+                      <ul class="itens">
+                          <li>Filé de Peixe</li>
+                          <li>Churrasco</li> 	
+                          <li>Costela com Mandioca</li>
+                      </ul>
+                  </div>
+                  <div class="cardapio">
+                      <h3>Sábado</h3>
+                      <ul class="itens">
+                          <li>Feijoada</li>
+                          <li>Prato da casa variado</li> 	
+                      </ul>
+                  </div>
+             </div>       
+		  </div>      
+         
+       
+      </div><!-- fim menu1-->
+       
+        
+         <!--PRATOS-->
+         <div id="menu2" >
+            <h4 class="semana">Nossos pratos</h4> 
+           <article class="pratofundo"> 
+             
+             <section class="content-all">  
+                <div class="content-img">
+                    <img src="img/CostelacomMandioca480.png" alt="Costela com mandioca">
+                    <div class="flag">
+                    <span></span>
+                    </div>    
+                    <div class="content-txt">
+                        <h2>Costela com mandioca</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Mandioca e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span>    
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+             </section>   
+               
+             <section class="content-all">
+                
+                <div class="content-img">
+                    <img src="img/churrascoP480.png" alt="Churrasco">
+                    <div class="flag">
+                      <span></span>
+                    </div>    
+                    <div class="content-txt">
+                        <h2>Churrasco</h2>
+                        <p>Esse prato contém o seguinte acompanhamento: Salada de Maionese e Farofa.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span>    
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+             </section>    
+               
+               
+             <section class="content-all">
+                
+                <div class="content-img">
+                    <img src="img/FiledePeixe480.png" alt="Filé de Peixe">
+                    <div class="flag">
+                    <span></span>
+                    </div>    
+                    <div class="content-txt">
+                        <h2>Filé de Peixe</h2>
+                        <p>
+                            Esse prato contém os seguintes acompanhamentos: Purê de Batata ou Batata-Frita.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span>    
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+             </section> 
+               
+             <section class="content-all">
+                
+                <div class="content-img">
+                    <img src="img/strogonof480.png" alt="Strogonoff">
+                    <div class="flag">
+                    <span></span>
+                    </div>    
+                    <div class="content-txt">
+                        <h2>Strogonoff</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Batata-Palha.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span>    
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>
+              
+                
+              
+               <section class="content-all">
+                <div class="content-img">
+                    <img src="img/viradoapaulista.png" alt="Virado á Paulista"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>  
+                    <div class="content-txt">
+                        <h2>Virado á Paulista</h2>
+                        <p> Esse prato contém os seguintes acompanhamentos: Ovo, Bisteca, Banana Frita, Couve e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$14,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>
+                
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/filedefrangogrelhado.png" alt="Filé de Frando Grelhado"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Filé de Frando Grelhado</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Batata-Frita e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section> 
+               
+               <section class="content-all">
+                <div class="content-img">
+                    <img src="img/filedefrangoaparmegiana.png"alt="Filé de frago a parmegiana"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Filé de Frango à Parmegiana</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Macarrão com Legumes e Salada. 
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>   
+               
+               <section class="content-all">
+                <div class="content-img">
+                    <img src="img/frangoassado480.png" alt="Frango Assado"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Frango Assado</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Macarrão e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section> 
+                
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/picadinho.png" alt="Picadinho"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Picadinho</h2>
+                        <p>
+                        Esse prato contém os seguintes acompanhamentos: Batata, Cenoura e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>  
+                
+              
+                
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/bifedepanela.png" alt="Bife de Panela"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Bife de Panela</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Macarrão com Legumes e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>  
+               
+               
+              
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/bifeacebolado.png" alt="Bife Acebolado"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Bife Acebolado</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Macarrão ou Batata-Frita.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>  
+               
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/lasanha.png" alt="Lasanha"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Lasanha</h2>
+                        <p>Esse prato contém o seguinte acompanhamento: Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>  
+               
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/costelasuinaassada.png" alt="Costela Suína Assada"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Costela Suína Assada</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Macarrão com Legumes e Salada.
+                        <br>
+                        <span class="valor">
+                            Valor: R$13,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>  
+               
+              <section class="content-all">
+                <div class="content-img">
+                    <img src="img/feijoada.png" alt="Feijoada"> 
+                    <div class="flag">
+                    <span></span>
+                    </div>
+                    <div class="content-txt">
+                        <h2>Feijoada</h2>
+                        <p>Esse prato contém os seguintes acompanhamentos: Bisteca, Torresmo, Couve e Farofa.
+                        <br>
+                        <span class="valor">
+                            Valor: R$ 22,00
+                        </span> 
+                        </p>
+                    </div>
+                    
+                    <div class="content-1"></div>
+                    <div class="content-2"></div>
+                    <div class="content-3"></div>
+                    <div class="content-4"></div>
+                </div>
+              </section>  
+               
+            </article>
+        </div>
+        
+        <!--SOBRE-->
+        <div id="menu3" >
+            <h3 class="semana">O Restaurante</h3>
+            <section class="sobrecontainer">
+                <article class="containerC">
+                    <figure class=restauranteimG>
+                        <img class="restauranteF" src="img/restaurante480.png" alt="Restaurante">
+                        <figcaption class="texto">
+                            <p>
+                                Nosso restaurante tem como diferencial a qualidade dos ingredientes utilizados para o preparo. Trabalhamos com atenção e carinho, pensando em refeições balanceadas e saborosas com o principal objetivo de satisfazer nossos clientes, mantendo cuidado com a saúde alimentar. Nossa equipe é treinada para garantir que você tenha uma excelente experiência em nosso estabelecimento. Contamos com um cardápio variado a fim de atender a todos os gostos, servindo inclusive lanches e salgados. Possuímos um espaço acolhedor para receber nossos clientes e serviço de entrega em domicílio com praticidade e rapidez. Temos convênios com diversas empresas para a entrega de Marmitex e outras refeições diárias. Nossa localização é de fácil acesso, tanto para quem deseja utilizar veículo próprio ou transporte público.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="motoboy">
+                         <img src="img/motoboyS480.png" alt="Motoboy">
+                    </figure>
+                </article> 
+            </section>
+        </div>
+        
+        <!--GALERIA-->
+        <div id="menu4" >
+           <h4 class="semana">Galeria de imagens</h4> 
+           <div class="galeria">
+                <a href=img/restaurante1366.png data-lightbox="mygallery" data-title="Faxada do restaurante"><img src="img/restaurante480.png" alt="Restaurante faxada"></a>
+                <a href=img/motoboy.png data-lightbox="mygallery" data-title="Motoboy"><img src="img/motoboy480.png" alt="Motoboy"></a>
+                <a href=img/cozinhaFeijoada1366.png data-lightbox="mygallery" data-title="Plano de fundo Feijoada"><img src="img/cozinhaFeijoada480.png" alt="Plano de fundo feijoada"></a>
+                <a href=img/FiledePeixe1366.png data-lightbox="mygallery" data-title="Filé de peixe"><img src="img/FiledePeixe480.png" alt="Filé de peixe"></a>
+                <a href=img/CostelacomMandioca1366.png data-lightbox="mygallery" data-title="Costela com mandioca"><img src="img/CostelacomMandioca480.png" alt="Costela com mandioca"></a>   
+                <a href=img/churrasco.png data-lightbox="mygallery" data-title="Churrasco na brasa"><img src="img/churrasco480.png" alt="Churrasco"></a>   
+                <a href=img/churrascoP1366.png data-lightbox="mygallery" data-title="Pratos com Churrasco"><img src="img/churrascoP480.png" alt="Churrasco"></a>    
+                <a href=img/strogonof1366.png data-lightbox="mygallery" data-title="Strogonoff"><img src="img/strogonof480.png" alt="Strogonoff"></a>
+                <a href=img/filedefrangoaparmegiana1366.png data-lightbox="mygallery" data-title="Filé de Frango á parmegiana"><img src="img/filedefrangoaparmegiana.png" alt="Filé de Frango á Parmegiana"></a>
+                <a href=img/filedefangogrelhado1366.png data-lightbox="mygallery" data-title="Filé de Frango Grelhado"><img src="img/filedefrangogrelhado.png" alt="File de frango grelhado"></a>
+                <a href=img/frangoassado1366.png data-lightbox="mygallery" data-title="Frango Assado"><img src="img/frangoassado480.png" alt="Filé de Frango Assado"></a>   
+                <a href=img/bifedepanela1366.png data-lightbox="mygallery" data-title="Bife de Panela"><img src="img/bifedepanela.png" alt="Bife de Panela"></a>
+                <a href=img/bifeacebolado1366.png data-lightbox="mygallery" data-title="Bife Acebolado"><img src="img/bifeacebolado.png" alt="Bife Acebolado"></a>
+                <a href=img/picadinho1366.png data-lightbox="mygallery" data-title="Picadinho"><img src="img/picadinho.png" alt="Picadinho"></a>
+                <a href=img/viradoapaulista1366.png data-lightbox="mygallery" data-title="Virado a Paulista"><img src="img/viradoapaulista.png" alt="Virado á Paulista"></a>
+                <a href=img/costelasuinassada1366.png data-lightbox="mygallery" data-title="Costela suina assada"><img src="img/costelasuinaassada.png" alt="Costela suina assada"></a>   
+                <a href=img/lasanha1366.png data-lightbox="mygallery" data-title="Lasanha"><img src="img/lasanha.png" alt="Lasanha"></a>
+                <a href=img/feijoada1366.png data-lightbox="mygallery" data-title="Feijoada"><img src="img/feijoada.png" alt="Feijoada"></a>
+            </div>
+        </div>
+        
+        <!--CONTATO-->
+        <div id="menu5">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.3082890736014!2d-46.88410308510623!3d-23.41322816202335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1cf29a279351%3A0x86786d87062abe43!2sR.+Mato+Grosso%2C+963+-+Jardim+Diva+(Fazendinha)%2C+Santana+de+Parna%C3%ADba+-+SP%2C+06530-445!5e0!3m2!1spt-BR!2sbr!4v1542666902893" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+           
+            <address class="mapC">
+                <div class="adr">
+                    <h2 class="vis">Venha nos visitar:</h2>
+                    <p>
+                    <img src="img/Google Maps_48px.png" alt="GoogleMapsicone"><br>
+                    Rua: Mato Grosso<br>
+                    N°963 - Jardim Diva (Fazendinha)<br>
+                    Santana de Parnaíba - SP<br>
+                    CEP: 06530-445<br>
+                    </p>
+                </div>    
+                <div class="adr">
+                    <h1 class="vis">Contatos:</h1>
+                    <ul class="contatosP">
+                      <li><img src="img/Phone_48px.png" alt="Telefone" width="30" height="30"><span>(11) 98020-6360</span></li>
+                      <li><img src="img/In Transit_502px.png" alt="TelefoneParaEntragas" width="30" height="30"><span>(11) 4156-8393</span></li> 
+                      <li><img src="img/WhatsApp_48px.png" alt="WhatsApp" width="30" height="30"><span>(11) 97393-5533</span></li>
+                      <li><img src="img/Google_48px.png" alt="GoogleIcone" width="30" height="30"> 
+                      <a href="mailto: DilmaRestaurante@gmail.com">DilmaRestaurante@gmail.com</a></li>    
+                    </ul>
+               </div>
+            </address>
+           
+        </div>  
+     
+      <!--End main-->
+     </main>   
+   </div>
+   <footer>
+    <div class="icones">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+    </div>
+    <p class="copyright">
+        Dilma Restaurante - 2018<br> 
+        <span>Copyright © - Todos os direitos reservados.</span>
+    </p> 	  
+   </footer>
+
+  </body>
+</html> 
