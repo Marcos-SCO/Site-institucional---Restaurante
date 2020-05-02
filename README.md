@@ -1,7 +1,7 @@
 # Site-institucional - Restaurante
-Projeto de site institucional com foco no front-end
+site institucional com foco no front-end
 
-Projeto inicial para o curso de informática para internet, foi proposto realizar o desenvolvimento de um site institucional. 
+Durante o semestre inicial para o curso de informática para internet, foi proposto realizar o desenvolvimento de um site institucional. 
 
 Esse projeto poderia atender a necessidade de um cliente real ou fictício. 
 
